@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "target": "ES2015",
+    // Reactのjsxという拡張子が使えるように名前解決している、jsxをjsに変えるなど
+    "jsx": "react"
+  }
+}
