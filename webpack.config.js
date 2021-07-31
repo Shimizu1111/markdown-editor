@@ -24,6 +24,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     publicPath: 'dist/',
+  },
+  // localhostでサーバーを立ち上げるための設定
+  devServer: {
+    // ビルドしたファイルでサーバーを立ち上げる、そのためのパス
+    publicPath: '/dist/',
+    // ホットリロード、ファイルの変更直後にブラウザに変更を反映
+    hot: true,
+    // サーバー起動時にブラウザを開く
+    open: true
   }
 }
 
